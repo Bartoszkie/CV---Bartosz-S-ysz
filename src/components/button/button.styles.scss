@@ -1,0 +1,41 @@
+.button {
+    &,
+    &:link,
+    &:visited {
+        padding: 1.5rem 4rem;
+        background-image: linear-gradient(
+            to right bottom, 
+            rgba(255, 255, 255, 0.2), 
+            rgba(255, 255, 255, 0.5)
+        );
+
+        display: inline-block;
+
+        text-decoration: none;
+        color: black;
+        
+        box-shadow: 0 1rem 2rem rgba(#000, .5);
+
+
+        border-radius: 10rem;
+        transition: all .2s;
+        cursor: pointer;
+    }
+
+    &:hover {
+        background-image: linear-gradient(
+            to right bottom, 
+            rgba(255, 255, 255, 0.9), 
+            rgba(255, 255, 255, 0.9)
+        );
+
+        transform: translateY(-.3rem);
+        box-shadow: 0 1rem 2rem rgba(#000, .3);
+    }
+
+    &:active, &:focus {
+        outline: none; 
+        transform: translateY(-0.1rem);
+        box-shadow: 0 0.5rem 1rem rgba(#000, .2);
+    }
+}

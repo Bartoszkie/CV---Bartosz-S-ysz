@@ -1,0 +1,20 @@
+//--BASE FOLDER
+@import "./base/mixin";
+@import "./base/base";
+@import "./base/typography";
+@import "./base/animation";
+
+//--COMPONENTS
+
+@import "../components/about-me/about-me.styles.scss";
+@import "../components/arrow/arrow.styles.scss";
+@import "../components/button/button.styles.scss";
+@import "../components/cart/cart.styles.scss";
+@import "../components/circle/circle.styles.scss";
+@import "../components/footer/footer.styles.scss";
+@import "../components/heading/heading.styles.scss";
+@import "../components/portfolio/portfolio.styles.scss";
+@import "../components/skills/skills.styles.scss";
+@import "../components/skill-cart/skill-cart.styles.scss";
+
+
