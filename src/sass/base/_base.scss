@@ -24,13 +24,12 @@ html {
 
 body {
     box-sizing: border-box;
+    margin: 3rem 
 }
 
 .container {
     display: grid;
-    grid-template-rows: repeat(4, minmax(min-content, 100vh)) 10vh;
+    grid-template-rows: repeat(4, minmax(min-content, 100vh)) 50vh;
     grid-template-columns: [full-start] minmax(6rem, 1fr) [main-start] repeat(8, [col-start] minmax(min-content, 25rem) [col-end]) [main-end] minmax(6rem, 1fr) [full-end];
     row-gap: 10rem;
-    
-   
 }
