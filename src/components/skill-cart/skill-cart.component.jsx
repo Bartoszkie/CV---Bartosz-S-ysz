@@ -7,8 +7,8 @@ const SkillCart = (props) => {
         <div className='skill-cart'>
             <Circle text={props.skill}/>
             <div className='skill-cart__text'>
-                <h4 className='heading-h5'>{props.heading}</h4>
-                <p>{props.text}</p>
+                <h4 className='heading-h4'>{props.heading}</h4>
+                <p className='paragraph'>{props.text}</p>
             </div>
         </div>
     );

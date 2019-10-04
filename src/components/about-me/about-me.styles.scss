@@ -75,7 +75,41 @@
         }
 
         &__pictures {
-           
+           display: flex;
+           flex-direction: column;
+           align-items: center;
+           justify-content: center;
+
+           &--img {
+               width: 30rem; 
+               height: 30rem; 
+               background-color: transparent;
+               border: .1rem solid black;
+
+               box-shadow: 0 1rem 1rem rgba(0, 0, 0, .2);
+
+               position: relative;
+
+               &::after {
+                   content: ""; 
+                   width: 100%;
+                   height: 100%;
+
+                   display: block;
+                   
+                   border: .5rem solid black;
+                   position: absolute;
+                   z-index: -1;
+
+                   transition: .3s ease-in-out all;
+               }
+
+               &:hover &::after {
+                   z-index: 1;
+                   width: 110%;
+                   height: 110%;
+               }
+            }
         }
     }
 }

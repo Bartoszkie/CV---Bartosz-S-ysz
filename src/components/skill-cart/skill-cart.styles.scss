@@ -8,7 +8,7 @@
 
     &__text {
         position: absolute;
-        top: 20%;
+        top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);   
 
@@ -18,6 +18,20 @@
         transition: all .2s ease;
 
         opacity: 0;
+        
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        justify-content: space-between;
+
+        .heading-h4 {
+            padding-bottom: .5rem;
+            border-bottom: .1rem solid rgba(0, 0, 0, .2);
+        }
+
+        .paragraph {
+            padding-top: .5rem;
+        }
     }
 
     &:hover .circle {
@@ -25,7 +39,7 @@
     }
 
     &:hover .skill-cart__text {
-        transform: translate(50%, -50%);
+        transform: translate(20%, -50%);
         opacity: 1;
     }
 }
