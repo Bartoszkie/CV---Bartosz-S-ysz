@@ -1,116 +1,102 @@
 .aboutMe {
-    grid-column: main-start / main-end;
-    grid-row: 2 / 3;
+  grid-column: main-start / main-end;
+  grid-row: 2 / 3;
 
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 
-    padding: 2rem 3.5rem;
+  padding: 2rem 3.5rem;
 
-    &-content {
-        margin-top: 5rem;
+  &-content {
+    margin-top: 5rem;
 
-        display: grid;
-        grid-template-rows: min-content 1fr;
-        grid-template-columns: 1fr min-content 1fr;
-        grid-gap: 5rem;
-        height: 100%;
-        
+    display: grid;
+    grid-template-rows: min-content 1fr;
+    grid-template-columns: 1fr min-content 1fr;
+    grid-gap: 5rem;
+    height: 100%;
 
-        h2 {
-            justify-self: center;
-            grid-column: 1 / -1;
-        }
-
-        &__paragraphs {
-            text-align: justify;  
-
-            display: grid;
-            grid-template-columns: 1fr;
-            grid-template-rows: repeat(2, min-content);
-            align-content: space-between;
-
-            &--edu {
-             
-            }
-
-            &--exp {
-                
-            }
-        }
-
-        &__after {
-            width: .2rem;
-            height: 100%;
-            background-color: #000;
-            
-            position: relative;
-            cursor: pointer;
-
-            &-circle--1, &-circle--2 {
-                position: absolute;
-                transform: translate(-50%, -50%);
-
-                display: flex;
-                flex-direction: column;
-                align-items: center;
-                justify-content: center;
-
-                border: .2rem solid black;
-                border-radius: 50%;
-                background-color: #fff;
-                width: 5rem;
-                height: 5rem;
-            }
-
-            &-circle--1 {
-                top: 1%;
-            }
-
-            &-circle--2 {
-                top: 100%;
-            }
-
-        }
-
-        &__pictures {
-           display: flex;
-           flex-direction: column;
-           align-items: center;
-           justify-content: center;
-
-           &--img {
-               width: 30rem; 
-               height: 30rem; 
-               background-color: transparent;
-               border: .1rem solid black;
-
-               box-shadow: 0 1rem 1rem rgba(0, 0, 0, .2);
-
-               position: relative;
-
-               &::after {
-                   content: ""; 
-                   width: 100%;
-                   height: 100%;
-
-                   display: block;
-                   
-                   border: .5rem solid black;
-                   position: absolute;
-                   z-index: -1;
-
-                   transition: .3s ease-in-out all;
-               }
-
-               &:hover &::after {
-                   z-index: 1;
-                   width: 110%;
-                   height: 110%;
-               }
-            }
-        }
+    h2 {
+      justify-self: center;
+      grid-column: 1 / -1;
     }
-}
 
+    &__paragraphs {
+      text-align: justify;
+
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-template-rows: repeat(2, min-content);
+      align-content: space-between;
+
+      &--edu {
+      }
+
+      &--exp {
+      }
+    }
+
+    &__after {
+      width: 0.2rem;
+      height: 100%;
+      background-color: #000;
+
+      position: relative;
+      cursor: pointer;
+
+      &-circle--1,
+      &-circle--2 {
+        position: absolute;
+        transform: translate(-50%, -50%);
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        border: 0.2rem solid black;
+        border-radius: 50%;
+        background-color: #fff;
+        width: 5rem;
+        height: 5rem;
+      }
+
+      &-circle--1 {
+        top: 1%;
+      }
+
+      &-circle--2 {
+        top: 100%;
+      }
+    }
+
+    &__pictures {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+
+      &--img {
+        width: 30rem;
+        height: 30rem;
+        background-color: transparent;
+        border: 0.1rem solid black;
+        box-shadow: 0 1rem 1rem rgba(0, 0, 0, 0.2);
+
+        position: relative;
+
+        outline-offset: 1.2rem;
+
+        outline: 1rem solid transparent;
+        transition: 0.3s ease all;
+        cursor: pointer;
+
+        &:hover {
+            border-color: transparent;
+            outline: 1rem solid rgba(218, 165, 32, 0.8);
+        }
+      }
+    }
+  }
+}
