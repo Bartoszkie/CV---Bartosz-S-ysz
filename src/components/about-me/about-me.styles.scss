@@ -32,11 +32,13 @@
             align-content: space-between;
 
             &--edu {
-             
+             border-bottom: .2rem solid rgba(#000, .2);
+             padding-bottom: 2rem;
             }
 
             &--exp {
-                
+                padding-top: 2rem;
+                border-top: .2rem solid rgba(#000, .2);
             }
         }
 
@@ -63,7 +65,7 @@
                 width: 5rem;
                 height: 5rem;
             }
-
+            
             &-circle--1 {
                 top: 1%;
             }
@@ -79,4 +81,5 @@
         }
     }
 }
+
 
