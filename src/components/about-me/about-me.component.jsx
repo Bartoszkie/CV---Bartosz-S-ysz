@@ -63,7 +63,11 @@ const AboutMe = () => {
           <div className="aboutMe-content__after-circle--2">EXP</div>
         </div>
 
-        <div className="aboutMe-content__pictures"></div>
+        <div className="aboutMe-content__pictures">
+            <div className='aboutMe-content__pictures--img'>
+              
+            </div>
+        </div>
       </div>
     </section>
   );

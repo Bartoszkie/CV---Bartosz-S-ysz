@@ -9,7 +9,7 @@ import Footer from "./components/footer/footer.component";
 import "./sass/main.scss";
 
 class App extends React.Component {
-  render() {
+  render() { 
     return (
       <div className="container">
         <Heading />
