@@ -30,54 +30,14 @@
       grid-template-rows: repeat(2, min-content);
       align-content: space-between;
 
-<<<<<<< HEAD
-            &--edu {
-             border-bottom: .2rem solid rgba(#000, .2);
-             padding-bottom: 2rem;
-            }
-
-            &--exp {
-                padding-top: 2rem;
-                border-top: .2rem solid rgba(#000, .2);
-            }
-        }
-
-        &__after {
-            width: .2rem;
-            height: 100%;
-            background-color: #000;
-            
-            position: relative;
-            cursor: pointer;
-
-            &-circle--1, &-circle--2 {
-                position: absolute;
-                transform: translate(-50%, -50%);
-
-                display: flex;
-                flex-direction: column;
-                align-items: center;
-                justify-content: center;
-
-                border: .2rem solid black;
-                border-radius: 50%;
-                background-color: #fff;
-                width: 5rem;
-                height: 5rem;
-            }
-            
-            &-circle--1 {
-                top: 1%;
-            }
-
-            &-circle--2 {
-                top: 100%;
-            }
-=======
       &--edu {
+        border-bottom: 0.2rem solid rgba(#000, 0.2);
+        padding-bottom: 2rem;
       }
 
       &--exp {
+        padding-top: 2rem;
+        border-top: 0.2rem solid rgba(#000, 0.2);
       }
     }
 
@@ -113,40 +73,34 @@
       &-circle--2 {
         top: 100%;
       }
-    }
->>>>>>> faf58e1b0477d367b8df5efc890a8a4523e1fdb6
 
-    &__pictures {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
+      &__pictures {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
 
-      &--img {
-        width: 30rem;
-        height: 30rem;
-        background-color: transparent;
-        border: 0.1rem solid black;
-        box-shadow: 0 1rem 1rem rgba(0, 0, 0, 0.2);
+        &--img {
+          width: 30rem;
+          height: 30rem;
+          background-color: transparent;
+          border: 0.1rem solid black;
+          box-shadow: 0 1rem 1rem rgba(0, 0, 0, 0.2);
 
-        position: relative;
+          position: relative;
 
-        outline-offset: 1.2rem;
+          outline-offset: 1.2rem;
 
-        outline: 1rem solid transparent;
-        transition: 0.3s ease all;
-        cursor: pointer;
+          outline: 1rem solid transparent;
+          transition: 0.3s ease all;
+          cursor: pointer;
 
-        &:hover {
+          &:hover {
             border-color: transparent;
             outline: 1rem solid rgba(218, 165, 32, 0.8);
+          }
         }
       }
     }
   }
 }
-<<<<<<< HEAD
-
-
-=======
->>>>>>> faf58e1b0477d367b8df5efc890a8a4523e1fdb6
