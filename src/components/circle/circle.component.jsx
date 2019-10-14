@@ -4,7 +4,7 @@ const Circle = (props) => {
     const bgImage = {
       backgroundImage: `url(${props.image})`, 
       backgroundPosition: 'left',
-      backgroundSize: '100%', 
+      backgroundSize: '70%', 
       backgroundRepeat: 'no-repeat', 
     }
 

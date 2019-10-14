@@ -3,10 +3,12 @@ import React from "react";
 import SkillCart from '../skill-cart/skill-cart.component';
 import Button from '../button/button.component';
 
-import java from '../
-import javascrpt from '../../assets/icons/javascript.svg';
-import css from '../../assets/icons/css.svg';
-import html from '../../assets/icons/html5.svg';
+import java from '../../asstets/icons/java.svg';
+import javascrpt from '../../asstets/icons/javascript.svg';
+import css from '../../asstets/icons/css.svg';
+import html from '../../asstets/icons/html5.svg';
+import sass from '../../asstets/icons/sass.svg';
+import react from '../../asstets/icons/react.svg';
 
 
 function Skills() {
@@ -22,11 +24,11 @@ function Skills() {
       <h1 className="heading-h2">Skills</h1>
       <div className="skills-container">
         <SkillCart image={javascrpt} skill={'JS'} heading={'JAVASCRIPT'} text={textJS}/>
-        <SkillCart skill={'CSS 3'} heading={'CSS'} text={textCSS}/>
-        <SkillCart skill={'HTML 5'} heading={'HTML 5'} text={textHTML}/>
-        <SkillCart skill={'React.js'} heading={'React.js'} text={textReact}/>
-        <SkillCart skill={'SCSS'} heading={'SCSS'} text={textSASS}/>
-        <SkillCart skill={'JAVA'} heading={'JAVA'} text={textJava}/>
+        <SkillCart image={css} skill={'CSS 3'} heading={'CSS'} text={textCSS}/>
+        <SkillCart image={html} skill={'HTML 5'} heading={'HTML 5'} text={textHTML}/>
+        <SkillCart image={react} skill={'React.js'} heading={'React.js'} text={textReact}/>
+        <SkillCart image={sass} skill={'SCSS'} heading={'SCSS'} text={textSASS}/>
+        <SkillCart image={java} skill={'JAVA'} heading={'JAVA'} text={textJava}/>
         </div>
       <Button link={"#portfolio"} text={'See bruh'}/>
     </section>
