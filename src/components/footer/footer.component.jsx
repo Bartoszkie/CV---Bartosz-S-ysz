@@ -4,11 +4,6 @@ const Footer = () => {
   return (
     <section className="footer">
     <h2 className='heading-h2'>So, The Contact...</h2>
-    <div className='footer--quote'>
-      <p className='quote'>
-        So Evojam - what do You think about me? Please let me know despite the decision You have made.
-      </p>
-    </div>
       <div className="footer__contact">
         <span className="footer__contact--item">Name: Bartosz Słysz</span>
         <span className="footer__contact--item">
@@ -17,6 +12,11 @@ const Footer = () => {
         <span className="footer__contact--item">
           Email: bartek.slysz@gmail.com
         </span>
+      </div>
+      <div className='footer__regards'>
+        <p className='quote--final'>
+          So Evojam, what do You think about me? I would be unbelievable glad if I could join You. But if my skills are not enough please give me a feedback regardless of decision You have made.  
+        </p>
       </div>
       <div className="footer__copyright">
         <p className="quote">

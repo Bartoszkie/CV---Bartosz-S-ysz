@@ -10,10 +10,8 @@ const Heading = () => {
     <section className="heading">
       <ParticlesContainer />
       <div className="heading-content">
-        <Fade left>
-          <h1 className="heading-h1">Bartoszek</h1>
-        </Fade>
-        <Button text={"Learn more..."} />
+        <h1 className="heading-h1">Bartoszek</h1>
+        <Button link={'#aboutMe'} text={'Learn more...'}/>
       </div>
     </section>
   );

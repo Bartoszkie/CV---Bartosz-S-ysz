@@ -5,7 +5,7 @@ import Circle from '../circle/circle.component';
 const SkillCart = (props) => {
     return(
         <div className='skill-cart'>
-            <Circle text={props.skill}/>
+            <Circle image={props.image} text={props.skill}/>
             <div className='skill-cart__text'>
                 <h4 className='heading-h4'>{props.heading}</h4>
                 <p className='paragraph'>{props.text}</p>

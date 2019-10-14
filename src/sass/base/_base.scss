@@ -8,6 +8,7 @@
 
 html {
     font-size: 62.5%;
+    scroll-behavior: smooth;
 
     @include respond(tab-land) { //width < 1200
         font-size: 56.25%; //chcemy aby 1rem = 9px => 8/16 = 56.25%;
@@ -18,14 +19,26 @@ html {
     }
 
     @include respond(big-desktop) {
-        font-size: 75%; //chcemy aby 1rem = 12px => 12/16 = 75%;
+        font-size: 70%;  //chcemy aby 1rem = 12px => 12/16 = 75%;
     }
 }
 
 body {
     box-sizing: border-box;
-    margin: 3rem 
+    margin: 3rem;
+
+    @include respond(big-desktop) {
+        margin: 0;
+    }
+
+    section {
+        &:not(:last-child) {
+            border-bottom: .2rem solid rgba(0, 0, 0, .4);
+        }
+    }
 }
+
+
 
 .container {
     display: grid;
