@@ -1,45 +1,60 @@
 .skill-cart {
-    position: relative;
-    display: inline-block;
-    width: 100%; 
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 2rem;
+    cursor: pointer;
 
-    display: flex;
-    justify-content: center;
+    .circle {
+        justify-self: center;
+        align-self: center;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        width: 20rem;
+        height: 20rem;
+
+        border: 1px solid black;
+        border-radius: 100rem;
+
+        transform: translateX(55%);
+        transition: .2s ease-in-out all;
+
+        @include respond(tab-port) {
+            transform: none;
+        }
+    }
 
     &__text {
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);   
 
-        -webkit-transition: all .2s ease;
-        -moz-transition: all .2s ease;
-        -ms-transition: all .2s ease;
-        transition: all .2s ease;
-
-        opacity: 0;
-        
-        display: flex;
-        flex-direction: column;
-        align-items: start;
-        justify-content: space-between;
-
-        .heading-h4 {
-            padding-bottom: .5rem;
+        h4 {
+            font-weight: 300;
+            text-shadow: .2rem .2rem rgba(0, 0, 0, .2);
             border-bottom: .1rem solid rgba(0, 0, 0, .2);
+            margin-bottom: .5rem;
         }
 
-        .paragraph {
-            padding-top: .5rem;
+        justify-self: center;
+        align-self: center;
+
+        opacity: 0;
+
+        transition: .2s ease-in-out all;
+        transform: translateX(-50%);
+
+        @include respond(tab-port) {
+            opacity: 1;
+            transform: none;
         }
     }
 
     &:hover .circle {
-        transform: translateX(-50%);
+        transform: translateX(0%);
     }
 
-    &:hover .skill-cart__text {
-        transform: translate(20%, -50%);
+    &:hover &__text {
         opacity: 1;
+        transform: translateX(0%);
     }
 }

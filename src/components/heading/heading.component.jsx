@@ -10,7 +10,7 @@ const Heading = () => {
       <ParticlesContainer/>
       <div className="heading-content">
         <h1 className="heading-h1">Bartoszek</h1>
-        <Button text={'Learn more...'}/>
+        <Button link={'#aboutMe'} text={'Learn more...'}/>
       </div>
     </section>
   );

@@ -2,10 +2,11 @@
     grid-column: main-start / main-end;
 
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: 20vw 1fr 20vw;
     grid-template-rows: min-content 1fr;
     justify-content: center;
     align-items: center;
+    column-gap: 2rem;
 
     padding: 1rem 2rem;
 
@@ -46,6 +47,19 @@
                 background-position: 100%;
             }
         }
+    }
+
+    &__regards {
+        * {
+            position: relative;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%); 
+        }
+
+        height: 50%;
+        border-left: .1rem solid rgba(0, 0, 0, .2);
+        border-right: .1rem solid rgba(0, 0, 0, .2);
     }
 
     &__copyright {

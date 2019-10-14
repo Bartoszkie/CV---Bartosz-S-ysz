@@ -1,11 +1,15 @@
 import React from "react";
 
 const Circle = (props) => {
+    const bgImage = {
+      backgroundImage: `url(${props.image})`, 
+      backgroundPosition: 'left',
+      backgroundSize: '100%', 
+      backgroundRepeat: 'no-repeat', 
+    }
+
     return (
-      <div className="circle">
-        <p className='heading-h4'>
-          {props.text}
-        </p>
+      <div className="circle" style={bgImage}>
       </div>
     );
 }

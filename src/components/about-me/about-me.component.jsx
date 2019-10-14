@@ -1,10 +1,12 @@
 import React from "react";
 
+import me from "../../asstets/img/Ja.jpg";
+
 import ParticlesSnow from "../particles/particles-snow.component";
 
 const AboutMe = () => {
   return (
-    <section className="aboutMe">
+    <section className="aboutMe" id="aboutMe">
       <ParticlesSnow />
       <div className="aboutMe-content">
         <h2 className="heading-h2">About me</h2>
@@ -64,9 +66,9 @@ const AboutMe = () => {
         </div>
 
         <div className="aboutMe-content__pictures">
-            <div className='aboutMe-content__pictures--img'>
-              
-            </div>
+          <div className="aboutMe-content__pictures--img">
+            <img src={me} alt="me" />
+          </div>
         </div>
       </div>
     </section>

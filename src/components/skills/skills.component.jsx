@@ -3,8 +3,14 @@ import React from "react";
 import SkillCart from '../skill-cart/skill-cart.component';
 import Button from '../button/button.component';
 
+import java from '../
+import javascrpt from '../../assets/icons/javascript.svg';
+import css from '../../assets/icons/css.svg';
+import html from '../../assets/icons/html5.svg';
+
+
 function Skills() {
-  const textJS = "So, when it comes to JS I feel very comofrtable with it. All fundamentals about JS are familiar to me. Both ES5 and ES6 features are not scary to me - BTW I love ES6!";
+  const textJS = "So, when it comes to JS I feel very comofrtable with it. All fundamentals about JS are familiar to me. Both ES5 and ES6+ features are not scary to me - BTW I love ES6!";
   const textCSS = "I love positioning. I think I know tons of new features of CSS and I feel very familiar with every new paradigms of positioning like FlexBox and CSS Grid - and also those old ones like Floats aren't unfamiliar to me!."
   const textHTML = "Yeah I even know how to program in HTML... of course it is a joke! There are tons of blocks that are known to me. I know how and when to use them, what are advantages and disatvantages of one above the other, and I'm always trying to write web skeleton as simple as it is possible."
   const textReact = "When it comes to my first superpower, it is React! I love the way of simplicity in React.js. All paradigms of React and how it behaves when it comes to render components are known to me. All extra features/packages like Redux, ContextAPI, styled-components, HOC patterns, routing, Redux-Saga, React Hooks...I just love it and freedom of choosing tools when it comes to build/solve interfaces/problems."
@@ -15,14 +21,14 @@ function Skills() {
     <section className="skills">
       <h1 className="heading-h2">Skills</h1>
       <div className="skills-container">
-        <SkillCart skill={'JS'} heading={'JAVASCRIPT'} text={textJS}/>
+        <SkillCart image={javascrpt} skill={'JS'} heading={'JAVASCRIPT'} text={textJS}/>
         <SkillCart skill={'CSS 3'} heading={'CSS'} text={textCSS}/>
         <SkillCart skill={'HTML 5'} heading={'HTML 5'} text={textHTML}/>
         <SkillCart skill={'React.js'} heading={'React.js'} text={textReact}/>
         <SkillCart skill={'SCSS'} heading={'SCSS'} text={textSASS}/>
         <SkillCart skill={'JAVA'} heading={'JAVA'} text={textJava}/>
         </div>
-      <Button text={'See bruh'}/>
+      <Button link={"#portfolio"} text={'See bruh'}/>
     </section>
   );
 }
