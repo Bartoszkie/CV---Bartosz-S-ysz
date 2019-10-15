@@ -17,7 +17,6 @@ import ParticlesSnow from "../particles/particles-snow.component";
 const Portfolio = () => {
   return (
     <section className="portfolio" id="portfolio">
-    <ParticlesSnow/>
       <Fade cascade>
         <h2 className="heading-h2">Portfolio</h2>
       </Fade>
