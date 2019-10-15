@@ -13,7 +13,7 @@ const Footer = () => {
 
       <div className="footer__contact">
         <Slide left>
-          <span className="footer__contact--item">Name: Bartosz Słysz</span>
+          <span className="footer__contact--item">Full Name: Bartosz Słysz</span>
           <span className="footer__contact--item">
             Phone Number: +48 662 920 264
           </span>
