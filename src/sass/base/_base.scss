@@ -30,12 +30,6 @@ body {
     @include respond(big-desktop) {
         margin: 0;
     }
-
-    section {
-        &:not(:last-child) {
-            border-bottom: .2rem solid rgba(0, 0, 0, .4);
-        }
-    }
 }
 
 

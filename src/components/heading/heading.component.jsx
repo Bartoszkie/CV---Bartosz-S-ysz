@@ -9,9 +9,15 @@ const Heading = () => {
   return (
     <section className="heading">
       <ParticlesContainer />
+      
       <div className="heading-content">
-        <h1 className="heading-h1">Bartoszek</h1>
-        <Button link={'#aboutMe'} text={'Learn more...'}/>
+        <Fade cascade>
+          <h1 className="heading-h1">Bartoszek</h1>
+        </Fade>
+
+        <Fade up>
+          <Button link={"#aboutMe"} text={"Learn more..."} />
+        </Fade>
       </div>
     </section>
   );
