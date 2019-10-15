@@ -12,7 +12,6 @@ import nexterMobile from "../../asstets/img/Nexter-mobile.png";
 import shop from "../../asstets/img/Shop.png";
 
 import Fade from "react-reveal/Fade";
-import ParticlesSnow from "../particles/particles-snow.component";
 
 const Portfolio = () => {
   return (
