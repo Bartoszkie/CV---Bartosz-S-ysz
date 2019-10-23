@@ -69,7 +69,7 @@ function Skills() {
             text={textJava}
           />
         </div>
-      <Button link={"#portfolio"} text={"See bruh"} />
+      <Button link={"#portfolio"} text={"See it!"} />
     </section>
   );
 }

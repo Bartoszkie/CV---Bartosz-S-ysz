@@ -26,7 +26,7 @@ const Footer = () => {
       <Slide cascade bottom>
         <div className="footer__regards">
           <p className="quote--final">
-            So Evojam, what do You think about me? I would be unbelievable glad
+            So MobiTouch, what do You think about me? I would be unbelievable glad
             if I could join You. But if my skills are not enough please give me
             a feedback regardless of decision You have made.
           </p>
